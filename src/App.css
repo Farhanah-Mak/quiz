@@ -1,38 +1,61 @@
-.App {
+.app{
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_container{
+  display: grid;
+  place-items: center;
+  width: 50vw;
+  border: 1px solid black;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start_btn, .next_btn, .restart_btn{
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
 }
+.start_btn:hover, .next_btn:hover, .restart_btn:hover{
+  background-color: white;
+  color:black;
+}
+.quiz_page{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.question{
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.quiz_page > button {
+  font-size: 18px;
+  border: 1px solid white;
+    padding: 20px 0px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: lightslategray;
+}
+.quiz_page > button:hover{
+    background-color: beige;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.score{
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.end_page{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
